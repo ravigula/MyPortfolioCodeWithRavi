@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="../Myprojects/style.css">
 </head>
 <body>
-        <header>
+        <header id="top">
             <h1>Wellcome to My Portfolio</h1>
-            <a href="">
-                <button>About</button>
+            <div>
+            <a href="#About">
+                <button class="button">About</button>
             </a>   
-             <a href="">
-                <button>Skills</button>
+             <a href="#Skills">
+                <button class="button">Skills</button>
              </a>
-             <a href="">
+             <a href="#Projects">
         
-                <button>Projects</button>
-             </a><a href="">
-        
-                <button>Contact</button>
+                <button class="button">Projects</button>
              </a>
+             <a href="#Contact">
+        
+                <button class="button">Contact</button>
+             </a>
+            </div>
              
              <br>
         </header>
@@ -28,7 +32,7 @@
         <main>
 <section id="About">
 
-    <h2>Ravi CS</h2>
+    <h1>Ravi CS</h1>
     <img width="430" height="499" src="E:\Users\Chinnu\Pictures\Saved Pictures\ravikuamar.jpeg" alt="photo of me">
     <p>I am passionate web developer with a focus on front-end technology.</p>
     <p>I am currently pursuing my B.Sc degree in <i>SRNK GOVT DEGREE COLLEGE</i> banswada.</p>
@@ -66,36 +70,50 @@
 <section id="Contact">
     <h1>Contact Me</h1>
     <p>feel free to get in touch with me uaing the form below</p>
-    <form actiom="">
+    <form action="">
+        <div>
             <label for="name">Name:</label>
             <input type="text"><br>
+        </div>
 
+        <div>
             <label for="email">Email:</label>
             <input type="email"><br>
+        </div>
 
+        <div>
             <b>Choose your gender:</b>
-            <input type="radio" id="male" value="male">
+            <input type="radio" id="male" value="male" style="cursor: pointer;">
             <label for="male">male</label>
-            <input type="radio" id="female" value="female">
-            <label for="female">female</label>  <br>
+            <input type="radio" id="female" value="female" style="cursor: pointer;">
+            <label for="female">female</label>  
+        </div>
 
-
+        <div>
             <b>select your interest:</b>
-            <input type="checkbox" id="coding" value="coding">
+            <input type="checkbox" id="coding" value="coding" style="cursor: pointer;">
             <label for="coding">coding</label>
-            <input type="checkbox" id="Reading" value="Reading">
-            <label for="Reading">Reading</label> <br>
+            <input type="checkbox" id="Reading" value="Reading" style="cursor: pointer;">
+            <label for="Reading">Reading</label>
+        </div>
 
+            
+        <div>
             <label for="bio">Bio(up to 200 charecters):</label>
-            <input type="text"> <br>
+            <input type="text"> 
+        </div>
+            
 
             <button type="submit" class="sub" id="submit">
-                submit
+                Submit
             </button>
     </form>
 
 </section>
         </main>
+        <a href="#top">
+        <button class="fixedbutton" id="submit">TOP</button>
+        </a>
 
         <footer>
             <p>© 2025 My Portfolio</p>
